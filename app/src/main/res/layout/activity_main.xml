@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <TextView
+        android:textSize="18sp"
+        android:text= "From"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:id="@+id/from"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/fromed"
+        android:layout_marginEnd="20dp" />
+
+    <EditText
+        android:id="@+id/fromed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="From Currency"
+        android:layout_alignBaseline="@+id/from"
+        android:layout_alignBottom="@+id/from"
+        android:layout_centerHorizontal="true" />
+
+   <TextView
+        android:textSize="18sp"
+        android:text= "To"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:id="@+id/to"
+       android:layout_below="@+id/fromed"
+       android:layout_alignStart="@+id/from" />
+
+    <EditText
+        android:id="@+id/toed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="To Currency"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/to"
+        android:layout_alignBottom="@+id/to"
+        android:layout_alignStart="@+id/fromed" />
+
+    <TextView
+        android:text="Value:"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toed"
+        android:layout_alignStart="@+id/to"
+        android:layout_marginTop="90dp"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:id="@+id/valueed"
+        android:hint="Enter Value "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignStart="@+id/toed" />
+
+    <Button
+        android:id="@+id/btn"
+        android:text="Change now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/result"
+        android:layout_alignEnd="@+id/valueed" />
+
+    <TextView
+        android:id="@+id/result"
+        android:text="Result"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/valueed"
+        android:layout_alignEnd="@+id/valueed"
+        android:layout_marginEnd="21dp" />
+
+    <TextView
+
+        android:text="-->"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/valueed"
+        android:layout_alignBottom="@+id/valueed"
+        android:layout_toEndOf="@+id/valueed"
+        android:layout_marginStart="15dp"
+        android:id="@+id/textView2" />
+</RelativeLayout>

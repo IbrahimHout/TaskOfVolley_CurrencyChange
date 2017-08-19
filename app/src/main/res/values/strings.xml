@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TaskOfVolley_CurrencyChange</string>
+    <string name="stcurrncy">First Currency</string>
+    <string name="ndcurrncy">Second Currency</string>
+</resources>
